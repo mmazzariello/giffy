@@ -12,13 +12,13 @@ import ListOfGifs from "./components/ListOfGifs";
 // ];
 
 export default function App() {
-  const [keyword, setKeyword] = useState("panda");
+  // const [keyword, setKeyword] = useState("panda");
   return (
     <div className="App">
       <h1>Animals</h1>
-      <button onClick={() => setKeyword("dog")}>Change Animal</button>
+      {/* <button onClick={() => setKeyword("dog")}>Change Animal</button> */}
       <section className="App-content">
-        <ListOfGifs keyword={keyword} />
+        <ListOfGifs keyword="panda" />
       </section>
     </div>
   );

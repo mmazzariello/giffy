@@ -12,7 +12,7 @@ export default function ListOfGifs({ keyword }) {
     [keyword]
   );
 
-  return gifs.map(({ id, title, url }) => (
-    <Gif key={id} url={url} title={title} />
+  return gifs.map(({ title, id, url }) => (
+    <Gif key={id} url={url} title={title} id={id} />
   ));
 }
