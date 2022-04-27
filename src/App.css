@@ -30,7 +30,7 @@ img {
   height: 300px;
 }
 
-div {
+.container {
   margin: 10px 4px;
   border: 1px solid rgb(156, 155, 155);
   border-radius: 8px;
@@ -38,8 +38,11 @@ div {
 }
 
 button {
-  font-size: 24px;
+  font-size: 20px;
   border-radius: 8px;
-  background-color: #fafafa;
   cursor: pointer;
+  padding: 8px;
+  border: none;
+  background-color: rgb(86, 128, 86);
+  color: #fff;
 }

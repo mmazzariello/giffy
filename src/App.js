@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
-import getGifs from "./services/getGifs";
 import ListOfGifs from "./components/ListOfGifs";
 
 // const GIFS = [
@@ -12,22 +11,15 @@ import ListOfGifs from "./components/ListOfGifs";
 //   "https://media1.giphy.com/media/H2SRCPod2Bfos/200w.webp?cid=ecf05e479casxzac6ktwem47j0q5b0jg66jxge3xm41vh262&rid=200w.webp&ct=g",
 // ];
 
-function App() {
-  const [gifs, setGifs] = useState([]);
-
-  useEffect(function () {
-    console.log("new effect");
-    getGifs({ keyword: "panda" }).then((gifs) => setGifs(gifs));
-  }, []);
-
+export default function App() {
+  const [keyword, setKeyword] = useState("panda");
   return (
     <div className="App">
-      <h1>Panda love</h1>
+      <h1>Animals</h1>
+      <button onClick={() => setKeyword("dog")}>Change Animal</button>
       <section className="App-content">
-        <ListOfGifs gifs={gifs} />
+        <ListOfGifs keyword={keyword} />
       </section>
     </div>
   );
 }
-
-export default App;
