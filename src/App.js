@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import getGifs from "./services/getGifs";
-import Gif from "./components/Gif";
+import ListOfGifs from "./components/ListOfGifs";
 
 // const GIFS = [
 //   "https://media4.giphy.com/media/jxODdkVOIGFgc/giphy.webp?cid=ecf05e479casxzac6ktwem47j0q5b0jg66jxge3xm41vh262&rid=giphy.webp&ct=g",
@@ -24,9 +24,7 @@ function App() {
     <div className="App">
       <h1>Panda love</h1>
       <section className="App-content">
-        {gifs.map(({ id, title, url }) => (
-          <Gif key={id} url={url} title={title} />
-        ))}
+        <ListOfGifs gifs={gifs} />
       </section>
     </div>
   );
