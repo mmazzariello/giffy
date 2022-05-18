@@ -1,13 +1,14 @@
 import React from "react";
+import GifsContext from "./../../context/GifsContext";
 import "./Detail.css";
+import Gif from "./../../components/Gif/Gif";
+import useGlobalGifs from "../../hooks/useGlobalGifs";
 
-export default function Detail() {
-  return (
-    <div className="container-details">
-      <p>Details</p>
-      <p>Details</p>
-      <p>Details</p>
-      <p>Details</p>
-    </div>
-  );
+export default function Detail({ params }) {
+  const gifs = useGlobalGifs();
+  console.log(gifs);
+
+  const gif = gifs.find((singleGif) => singleGif.id === params.id);
+
+  return <Gif {...gif} />;
 }

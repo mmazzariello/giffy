@@ -10,11 +10,11 @@ export default function getGifs({ keyword = "panda" } = {}) {
       if (Array.isArray(data)) {
         const gifs = data.map((image) => {
           const { images, title, id } = image;
-          console.log("0", id);
+          // console.log("0", id);
           const { url } = images.downsized_medium;
           return { title, id, url };
         });
-        console.log(response.id);
+        // console.log(response.id);
         return gifs;
       }
     });

@@ -10,12 +10,12 @@
 h3 {
   color: white;
   text-transform: uppercase;
-  margin: 0;
+  margin: 20px 0 4px 0;
   font-size: 28px;
+  text-align: left;
 }
 
 ul {
-  /* border: 2px solid yellow; */
   text-align: left;
   padding: 0;
   margin: 0;
@@ -23,4 +23,24 @@ ul {
 
 li {
   list-style: none;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+input:focus-visible {
+  outline: 1px solid lightblue;
 }
