@@ -3,8 +3,7 @@ import { Link, useLocation } from "wouter";
 import "./Home.css";
 import { useGifs } from "../../hooks/useGifs";
 import ListOfGifs from "../../components/ListOfGifs/ListOfGifs";
-
-const POPULAR_GIFS = ["Dogs", "Cats"];
+import TrendingSearches from "../../components/TrendigSearches/trendingSearches";
 
 export default function Home() {
   const [keyword, setKeyword] = useState("");
@@ -31,15 +30,7 @@ export default function Home() {
           value={keyword}
         />
       </form>
-      <h3>The most popular Gifs</h3>
-      <ul>
-        {POPULAR_GIFS.map((popularGif) => (
-          <li key={popularGif}>
-            <Link to={`/search/${popularGif}`}> {popularGif}</Link>
-          </li>
-        ))}
-      </ul>
-
+      <TrendingSearches />
       <h3>Last Results:</h3>
       <ListOfGifs gifs={gifs} />
     </div>
