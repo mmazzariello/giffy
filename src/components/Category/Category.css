@@ -21,11 +21,11 @@
   color: white !important;
   font-size: 18px;
   transition: color ease-in 0.1s;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
-ul::marker {
-  display: none;
+span {
+  text-transform: capitalize;
 }
 
 .Category-link:hover {
