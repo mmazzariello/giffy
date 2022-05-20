@@ -3,9 +3,9 @@ import Gif from "./../Gif/Gif";
 
 export default function ListOfGifs({ gifs }) {
   return (
-    <div>
-      {gifs.map(({ id, title, url, key }) => (
-        <Gif id={id} key={key} title={title} url={url} />
+    <div className="ListOfGifs">
+      {gifs.map(({ id, title, url }) => (
+        <Gif id={id} key={id} title={title} url={url} />
       ))}
     </div>
   );

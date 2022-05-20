@@ -16,7 +16,7 @@ const fromApiResponseToGifs = (apiResponse) => {
 };
 
 export default function getGifs({
-  limit = 25,
+  limit = 5,
   keyword = "panda",
   page = 0,
 } = {}) {

@@ -6,7 +6,7 @@ import useGlobalGifs from "../../hooks/useGlobalGifs";
 
 export default function Detail({ params }) {
   const gifs = useGlobalGifs();
-  console.log(gifs);
+  // console.log(gifs);
 
   const gif = gifs.find((singleGif) => singleGif.id === params.id);
 
