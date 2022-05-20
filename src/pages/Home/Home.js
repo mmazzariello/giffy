@@ -23,12 +23,8 @@ export default function Home() {
   return (
     <div className="container-home">
       <form onSubmit={handleSubmit}>
-        <input
-          onChange={handleChange}
-          placeholder="Search a gif..."
-          type="text"
-          value={keyword}
-        />
+        <input onChange={handleChange} placeholder="Search a gif..." type="text" value={keyword} />
+        <button>Search</button>
       </form>
       <TrendingSearches />
       <h3>Last Results:</h3>
