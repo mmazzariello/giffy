@@ -14,7 +14,7 @@ export default function App() {
     <Context.Provider value={{ name: "midu", suscribeteAlCanal: true }}>
       <div className="general-container-app">
         <Link to="/">
-          <i>🏠</i>
+          <i>GIPHY</i>app
         </Link>
         <div className="App">
           <Suspense fallback={null}>

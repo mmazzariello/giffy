@@ -9,7 +9,7 @@ export default function TrendingSearches() {
     getTrendingTerms().then(setTrends);
   }, []);
 
-  return <Category name="Tendencias" options={trends} />;
+  return <Category name="Trending" options={trends} />;
 }
 
 //Hace la llamada, muestra categorias, importa servicio etc.

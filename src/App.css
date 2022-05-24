@@ -6,20 +6,17 @@
   overflow-x: hidden;
   justify-content: start;
   width: 100%;
-  /* border: 2px solid red; */
   color: #fff;
   padding: 20px 0;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .App-content {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
   flex-direction: column;
-  /* border: 2px solid blue; */
   text-align: left;
   padding: 0 30px;
 }
@@ -39,26 +36,19 @@ img {
   height: 300px;
 }
 
-/* .container {
-  margin: 10px 4px;
-  border: 1px solid rgb(156, 155, 155);
-  border-radius: 8px;
-  padding: 4px;
-} */
-
 button {
   font-size: 20px;
   border-radius: 8px;
   cursor: pointer;
   padding: 8px;
   border: none;
-  background-color: rgb(86, 128, 86);
+  background-color: rgb(69, 177, 69);
   color: #fff;
 }
 
 a {
   cursor: pointer !important;
-  color: rgb(129, 185, 204) !important;
+  color: rgb(69, 177, 69) !important;
   margin: 4px;
   font-size: 26px;
   height: fit-content;
@@ -67,9 +57,22 @@ a {
 i {
   font-size: 80px;
   font-style: normal;
+  color: white;
+  margin-top: 20px;
 }
 
 .general-container-app {
   background-color: #282c34;
   width: 100%;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 767px) {
+  i {
+    font-size: 40px;
+  }
+
+  .general-container-app {
+    padding: 40px 0 20px 0;
+  }
 }

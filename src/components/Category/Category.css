@@ -8,6 +8,7 @@
 .Category-title {
   color: white;
   font-weight: bold;
+  margin-top: 4%;
 }
 
 .Category-list {
@@ -20,7 +21,7 @@
 
 .Category-link {
   color: white !important;
-  font-size: 18px;
+  font-size: 16px;
   transition: color ease-in 0.1s;
   text-transform: uppercase;
 }
@@ -29,8 +30,12 @@ span {
   text-transform: capitalize;
 }
 
-.Category-link:hover {
+span:hover {
   color: #8c55a2;
+}
+
+a:hover {
+  color: #96b596 !important;
 }
 
 @media screen and (min-width: 640px) {
@@ -42,5 +47,11 @@ span {
     color: #8c55a2;
     margin-right: 0.5em;
     font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Category-title {
+    margin-top: 10%;
   }
 }
