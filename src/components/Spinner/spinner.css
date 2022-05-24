@@ -15,8 +15,7 @@
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px;
   margin: 37px 10px 10px;
-  animation: 0.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s infinite alternate
-    none running bouncer;
+  animation: 0.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s infinite alternate none running bouncer;
 }
 
 .lds-ring div:nth-child(5n + 1) {

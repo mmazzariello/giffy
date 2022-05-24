@@ -1,14 +1,17 @@
 import React from "react";
-import GifsContext from "./../../context/GifsContext";
 import "./Detail.css";
 import Gif from "./../../components/Gif/Gif";
-import useGlobalGifs from "../../hooks/useGlobalGifs";
+import useSingleGif from "../../hooks/useSingleGif";
+import Spinner from "./../../components/Spinner/Spinner";
+import { Redirect } from "wouter";
 
 export default function Detail({ params }) {
-  const gifs = useGlobalGifs();
-  // console.log(gifs);
+  const { gif, isLoading, isError } = useSingleGif({ id: params.id });
 
-  const gif = gifs.find((singleGif) => singleGif.id === params.id);
+  if (isLoading) return <Spinner />;
+  if (isError) return <Redirect to="/404" />;
+  if (!gif) return null;
+  console.log(gif);
 
   return (
     <div className="container-gif">

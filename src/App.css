@@ -23,6 +23,11 @@
 
 h3 {
   margin-bottom: 8px;
+  color: white;
+  text-transform: uppercase;
+  margin: 36px 8px 4px 0;
+  font-size: 28px;
+  text-align: center;
 }
 
 p {
