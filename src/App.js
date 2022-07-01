@@ -31,20 +31,5 @@ export default function App() {
         </div>
       </div>
     </Context.Provider>
-    // <Context.Provider value={{ name: "midu", suscribeteAlCanal: true }}>
-    //   <div className="App">
-    //     <section className="App-content">
-    // <h1>App</h1>
-    //       <Link to="/">
-    //         <i>Home</i>
-    //       </Link>
-    //       <GifsContextProvider>
-    //         <Route component={Home} path="/" />
-    //         <Route component={SearchResults} path="/search/:keyword" />
-    //         <Route component={Detail} path="/gif/:id" />
-    //       </GifsContextProvider>
-    //     </section>
-    //   </div>
-    // </Context.Provider>
   );
 }
